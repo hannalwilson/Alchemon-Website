@@ -1,0 +1,732 @@
+<!doctype html>
+
+<html lang="en">
+	<head onload="loadFunction()" style="margin:0;">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Alchedex</title>
+		<meta name="description" content="This is the website for Alchemon.">
+		<meta name="author" content="Alchemon Inc">
+
+		<meta property="og:title" content="The website for Alchemon.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://alchemon.net/">
+		<meta property="og:description" content="This is the website for Alchemon.">
+		<meta property="og:image" content="images/alchemon_logo.png">
+
+		<link rel="icon" href="images/egg.png">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	
+		<script src="js/scripts.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	
+<!---LOADING PAGE--->
+		<div id="loader_symbol" width="100%" ></div>
+		<div id="loader_text">Alchemon loading!</div>
+		<div id="loader_image"> <img src="images/egg.png" width="100%" alt="Alchemon Egg"></div>
+	</head>
+
+<!---BODY--->
+	<body>
+
+<!---NAVBAR--->
+		<div class="topnav" id="myTopnav" onmouseover="navFunction()" onmouseout="navFunction()">
+			<a href="javascript:void(0);" class="icon" >
+				<i class="fa fa-bars"></i>
+			</a>	
+			<a href="#contact">CONTACT</a>
+			<a href="news.html" target="_blank" >NEWS</a>
+			<a href="https://www.randgallery.com/algo-collection/?address=ALCHY5SJXOXZXADZPD73KO6CYNZXDUWFYANTSXU6RIO3EZACIIXUCS3YDM" target="_blank">STORE</a>
+			<a href="litepaper.html" target="_blank">LITEPAPER</a>
+			<a href="tokens.html" target="_blank">TOKENS</a>
+			<a href="alchedex.html" target="_blank">ALCHEDEX</a>
+			<a href="how-to-play.html" target="_blank">HOW TO PLAY</a>
+		</div>
+		
+<!---Navbar logo--->
+		<div>
+			<a href="index.html"><img class="sticky" src="images/alchemon_logo.png" alt="Alchemon logo"></a>
+		</div>
+
+<!---ALCHEDEX PAGE--->
+		<table class="blueBackground_5">
+			<colgroup>
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%"><col width="4%">
+				<col width="4%">
+			</colgroup>
+
+<!---Alchedex image--->
+				<td colspan=25 class="whiteGrayBackground_2">
+				<p><img class="centerImage" src="images/alchedex.png" width="35%"></p>
+				<p class="darkBlueHeader" id="spreadText" style="margin-top:0%; margin-bottom:5%;">ALCHEDEX</p>
+				</td>
+<!---Enter wallet address--->
+			<tr>
+				<td colspan=25>
+					<p class="whiteText">View your Alchemon NFT Cards by entering your wallet address below!</p>
+						<input type="text" id="text" class="darkGrayText_1" placeholder="  Enter wallet address" style="width:50%;height:50px;font-family:poppins;font-size: 2vw;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);border:none;" />
+						<input type="button" class="submitButton" id="btn" value="Submit" value="Submit" style="vertical-align:bottom;" onClick="javascript: window.open('https://www.randgallery.com/algo-collection/?address=' + document.getElementById('text').value + '&creator=OJGTHEJ2O5NXN7FVXDZZEEJTUEQHHCIYIE5MWY6BEFVVLZ2KANJODBOKGA');" />
+					<p class="whiteText">Add Alchemon NFT Card Assets to your wallet via Rand Gallery. Click the button then click "Add ASAs" in Rand Gallery & sign the transaction with MyAlgoWallet. 
+						<a style="margin-right:2%; margin-left:2%;" href="https://www.randgallery.com/algo-collection/?address=306180273%2C306181364%2C306729637%2C306183859%2C306184765%2C306186552%2C306187531%2C+306188337%2C306189097" target="_blank" role="button">#01-09</a>
+						<a style="margin-right:2%;" href="https://www.randgallery.com/algo-collection/?address=306190133%2C306190826%2C306191511%2C313419037%2C313421275%2C315166675%2C332014800%2C337225085%2C337226686" target="_blank" role="button">#10-18</a>
+						<a style="margin-right:2%;" href="https://www.randgallery.com/algo-collection/?address=332016564%2C337228921%2C337230496%2C332017894%2C337231891%2C+337233127%2C332018856%2C337238291%2C337239113" target="_blank" role="button">#19-26</a>
+						<a style="margin-right:2%;" href="https://www.randgallery.com/algo-collection/?address=337243065%2C337244072%2C337245090%2C395700430%2C400877134%2C400878709%2C395706101%2C400883933%2C400885791" target="_blank" role="button">#27-36</a>
+						<a style="margin-right:2%;" href="https://www.randgallery.com/algo-collection/?address=395702497%2C400887826%2C400889657%2C395703386%2C400891886%2C400894271%2C400920947%2C400924498%2C400926043" target="_blank" role="button">#37-45</a></p>
+					<p class="whiteText" id="marginFix_2">Here are all released Alchemon NFT cards!:</p>				
+				</td>
+			</tr>
+			
+<!---Cards #45-43--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400926043" target="_blank"><img src="images/cards/45_venoreaper.png" alt="Venoreaper" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400926043</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 150</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400924498" target="_blank"><img src="images/cards/44_demoreaper.png" alt="Demoreaper" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400924498</p>
+						<p class="darkBlueHeader">Minted: 250</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400924498" target="_blank"><img src="images/cards/43_venafrost.png" alt="Venafrost" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400920947</p>
+						<p class="darkBlueHeader">Minted: 250</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #42-40--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400894271" target="_blank"><img src="images/cards/42_demolisher.png" alt="Demolisher" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400894271</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 400</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400891886" target="_blank"><img src="images/cards/41_demolite.png" alt="Demolite" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400891886</p>
+						<p class="darkBlueHeader">Minted: 500</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=395703386" target="_blank"><img src="images/cards/40_demo.png" alt="Demo" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 395703386</p>
+						<p class="darkBlueHeader">Minted: 600</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #39-37--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400889657" target="_blank"><img src="images/cards/39_mantireaper.png" alt="Mantireaper" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400889657</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 400</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400887826" target="_blank"><img src="images/cards/38_mantigrip.png" alt="Mantigrip" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400887826</p>
+						<p class="darkBlueHeader">Minted: 500</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=395702497" target="_blank"><img src="images/cards/37_manti.png" alt="Manti" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 395702497</p>
+						<p class="darkBlueHeader">Minted: 600</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #36-34--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400885791" target="_blank"><img src="images/cards/36_frostbite.png" alt="Frostbite" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400885791</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 400</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400883933" target="_blank"><img src="images/cards/35_icesaber.png" alt="Icesaber" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400883933</p>
+						<p class="darkBlueHeader">Minted: 500</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=395706101" target="_blank"><img src="images/cards/34_sable.png" alt="Sable" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 395706101</p>
+						<p class="darkBlueHeader">Minted: 600</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #33-31--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400878709" target="_blank"><img src="images/cards/33_venatrix.png" alt="Venatrix" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400878709</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 400</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=400877134" target="_blank"><img src="images/cards/32_ventar.png" alt="Ventar" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 400877134</p>
+						<p class="darkBlueHeader">Minted: 500</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=395700430" target="_blank"><img src="images/cards/31_vena.png" alt="Vena" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 395700430</p>
+						<p class="darkBlueHeader">Minted: 600</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #30-28--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337245090" target="_blank"><img src="images/cards/30_shred-x.png" alt="Shred-X" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337245090</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 25</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337244072" target="_blank"><img src="images/cards/29_lavaslayer.png" alt="Lavaslayer" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337244072</p>
+						<p class="darkBlueHeader">Minted: 45</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337243065" target="_blank"><img src="images/cards/28_slugginslash.png" alt="Slugginslash" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 395700430</p>
+						<p class="darkBlueHeader">Minted: 45</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #27-25--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337239113" target="_blank"><img src="images/cards/27_lavatrix.png" alt="Lavatrix" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337239113</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 60</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337238291" target="_blank"><img src="images/cards/26_igniter.png" alt="Igniter" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337238291</p>
+						<p class="darkBlueHeader">Minted: 90</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=332018856" target="_blank"><img src="images/cards/25_iggy.png" alt="Iggy" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 332018856</p>
+						<p class="darkBlueHeader">Minted: 120</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #24-22--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337233127" target="_blank"><img src="images/cards/24_drathslayer.png" alt="Drathslayer" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337233127</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 60</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337231891" target="_blank"><img src="images/cards/23_drathula.png" alt="Drathula" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337231891</p>
+						<p class="darkBlueHeader">Minted: 90</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=332017894" target="_blank"><img src="images/cards/22_drath.png" alt="Drath" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 332017894</p>
+						<p class="darkBlueHeader">Minted: 120</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #21-19--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337230496" target="_blank"><img src="images/cards/21_sluggernaut.png" alt="Sluggernaut" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337230496</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 60</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337228921" target="_blank"><img src="images/cards/20_slugger.png" alt="Slugger" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337228921</p>
+						<p class="darkBlueHeader">Minted: 90</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=332016564" target="_blank"><img src="images/cards/19_slug.png" alt="Slug" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 332016564</p>
+						<p class="darkBlueHeader">Minted: 120</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #18-16--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337226686" target="_blank"><img src="images/cards/18_archislash.png" alt="Archislash" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337226686</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 60</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=337225085" target="_blank"><img src="images/cards/17_archicut.png" alt="Archicut" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 337225085</p>
+						<p class="darkBlueHeader">Minted: 90</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=332014800" target="_blank"><img src="images/cards/16_arch.png" alt="Arch" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 332014800</p>
+						<p class="darkBlueHeader">Minted: 120</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+			
+<!---Cards #15-13--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=315166675" target="_blank"><img src="images/cards/15_psychosaurus.png" alt="Psychosaurus" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 315166675</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 5</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=313421275" target="_blank"><img src="images/cards/14_shoctosaur.png" alt="Shoctosaur" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 313421275</p>
+						<p class="darkBlueHeader">Minted: 10</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=313419037" target="_blank"><img src="images/cards/13_psychomenice.png" alt="Psychomenice" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 313419037</p>
+						<p class="darkBlueHeader">Minted: 10</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #12-10--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306191511" target="_blank"><img src="images/cards/12_flightning.png" alt="Flightning" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306191511</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 20</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306190826" target="_blank"><img src="images/cards/11_shockner.png" alt="Shockner" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306190826</p>
+						<p class="darkBlueHeader">Minted: 40</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306190133" target="_blank"><img src="images/cards/10_bolt.png" alt="Bolt" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306190133</p>
+						<p class="darkBlueHeader">Minted: 80</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #9-7--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306189097" target="_blank"><img src="images/cards/9_troctosaur.png" alt="Troctosaur" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306189097</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 20</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306188337" target="_blank"><img src="images/cards/8_troctor.png" alt="Troctor" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306188337</p>
+						<p class="darkBlueHeader">Minted: 40</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306187531" target="_blank"><img src="images/cards/7_troc.png" alt="Troc" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306187531</p>
+						<p class="darkBlueHeader">Minted: 80</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Cards #6-4--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306186552" target="_blank"><img src="images/cards/6_miyamenace.png" alt="Miyamenace" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306186552</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 20</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306184765" target="_blank"><img src="images/cards/5_miyachu.png" alt="Miyachu" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306184765</p>
+						<p class="darkBlueHeader">Minted: 40</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306183859" target="_blank"><img src="images/cards/4_miya.png" alt="Miya" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306183859</p>
+						<p class="darkBlueHeader">Minted: 80</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+			
+<!---Cards #3-1--->
+			<tr>
+				<td colspan=1>
+				</td>	
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306729637" target="_blank"><img src="images/cards/3_psychgeist.png" alt="Psychegeist" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306729637</p>
+						<p style="margin-bottom:5%" class="darkBlueHeader">Minted: 20</p>
+					</a>
+				</td>
+					
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306181364" target="_blank"><img src="images/cards/2_gheistly.png" alt="Gheistly" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306181364</p>
+						<p class="darkBlueHeader">Minted: 40</p>
+					</a>
+				</td>
+				
+				<td colspan=1>
+				</td>
+				
+				<td colspan=7 class="whiteBackground1">
+					<p style="margin-top:-5%"><a href="https://www.randgallery.com/algo-collection/?address=306180273" target="_blank"><img src="images/cards/1_gheist.png" alt="Gheist" width="100%"></a></p>
+						<p class="darkBlueHeader">Asset: 306180273</p>
+						<p class="darkBlueHeader">Minted: 80</p>
+					</a>
+				</td>
+
+				<td colspan=1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=25><p></p>
+				</td>
+			</tr>
+
+<!---Evolution chart 3--->
+			<tr>
+				<td colspan=25>
+					<div class="marginFix_1">
+						<img class="evolutionPoster" id="zoomIn_2" src="images/evolution_set_3.png" width="90%" alt="Evolution Chart">
+					</div>
+				</td>
+			</tr>
+
+<!---Evolution chart 2--->
+			<tr>
+				<td colspan=25>
+					<div class="marginFix_1">
+						<img class="evolutionPoster" id="zoomIn_2" src="images/evolution_set_2.png" width="90%" alt="Evolution Chart">
+					</div>
+				</td>
+			</tr>
+			
+<!---Evolution chart 1--->
+			<tr>
+				<td colspan=25>
+					<div class="marginFix_1">
+						<img class="evolutionPoster" id="zoomIn_2" src="images/evolution.png" width="90%" alt="Evolution Chart">
+					</div>
+				</td>
+			</tr>
+
+<!---FOOTER--->
+			<tr>
+				<td colspan=25 class="footer">
+					<p id="marginFix_3" >© 2021 Alchemon. All Rights Reserved.<br><br><a class="footerLink" href="https://t.me/joinchat/WbyxkfAyJDZmMzE5" target="_blank">Telegram</a> // <a class="footerLink" href="https://discord.gg/qKtk4XGXyS" target="_blank">Discord </a>// <a class="footerLink" href="https://twitter.com/AlchemonNFT" target="_blank">Twitter</a><br><br><a class="footerLink" href="privacypolicy.html" target="_blank" style="font-weight: normal">Privacy Policy</a><br><a class="footerLink" href="termsandconditions.html" target="_blank" style="font-weight: normal">Terms and Conditions</a><br><a class="footerLink" href="cookiespolicy.html" target="_blank" style="font-weight: normal">Cookies Policy</a>
+						<img class="footerImage1" src="images/backs/4_miya_back.png" width="15%" alt="Miya">
+						<img id="contact" class="footerImage2" src="images/19_slug.png" width="15%" alt="Slug">
+					</p>
+				</td>
+			</tr>		
+	
+	</body>
+</html>

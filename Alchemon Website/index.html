@@ -1,0 +1,172 @@
+<!doctype html>
+
+<html lang="en">
+	<head onload="loadFunction()" style="margin:0;">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Alchemon</title>
+		<meta name="description" content="This is the website for Alchemon.">
+		<meta name="author" content="Alchemon Inc">
+
+		<meta property="og:title" content="The website for Alchemon.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://alchemon.net/">
+		<meta property="og:description" content="This is the website for Alchemon.">
+		<meta property="og:image" content="images/alchemon_logo.png">
+
+		<link rel="icon" href="images/egg.png">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	
+		<script src="js/scripts.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	
+<!---LOADING PAGE--->
+		<div id="loader_symbol" width="100%" ></div>
+		<div id="loader_text">Alchemon loading!</div>
+		<div id="loader_image"> <img src="images/egg.png" width="100%" alt="Alchemon Egg"></div>
+	</head>
+
+<!---BODY--->
+	<body>
+
+<!---NAVBAR--->
+		<div class="topnav" id="myTopnav" onmouseover="navFunction()" onmouseout="navFunction()">
+			<a href="javascript:void(0);" class="icon" >
+				<i class="fa fa-bars"></i>
+			</a>	
+			<a href="#contact">CONTACT</a>
+			<a href="news.html" target="_blank" >NEWS</a>
+			<a href="https://www.randgallery.com/algo-collection/?address=ALCHY5SJXOXZXADZPD73KO6CYNZXDUWFYANTSXU6RIO3EZACIIXUCS3YDM" target="_blank">STORE</a>
+			<a href="litepaper.html" target="_blank">LITEPAPER</a>
+			<a href="tokens.html" target="_blank">TOKENS</a>
+			<a href="alchedex.html" target="_blank">ALCHEDEX</a>
+			<a href="how-to-play.html" target="_blank">HOW TO PLAY</a>
+		</div>
+		
+<!---Navbar logo--->
+		<div>
+			<a href="index.html"><img class="sticky" src="images/alchemon_logo.png" alt="Alchemon logo"></a>
+		</div>
+
+<!---HOME PAGE--->
+		<table>
+			<colgroup>
+				<col width="10%"><col width="10%">
+				<col width="10%"><col width="10%">
+				<col width="10%"><col width="10%">
+				<col width="10%"><col width="10%">
+				<col width="10%"><col width="10%">
+			</colgroup>
+
+<!---Background video--->
+				<td colspan=10 class="whiteGrayBackground_5" style="margin-bottom: -10%;">
+					<video autoplay muted loop width="100%" id="backgroundSky">
+						<source src="images/gifs/clouds.mp4" type="video/mp4">
+						Your browser does not support HTML5 videos.
+					</video>
+
+<!---Background logo--->
+					<img class="logo" src="images/alchemon_logo.png" alt="Alchemon logo" width="25%"> 
+
+<!---Characters at top of homepage--->
+					<div> 
+						<img class="schockner" src="images/gifs/11_shockner_back.gif" alt="Shockner" width="27%">
+						<img class="venetrix" src="images/gifs/33_venatrix.gif" alt="Venatrix" width="27%">
+						<img class="psychomenice" src="images/gifs/13_psychomenice_back.gif" alt="Psychomenice" width="27%">
+						<img class="troctosaur" src="images/gifs/9_troctosaur.gif" alt="Troctosaur" width="27%">
+						<img class="troc" src="images/gifs/7_troc_back.gif" alt="Troc" width="27%">
+						<img class="igniter" src="images/gifs/26_igniter.gif" alt="Igniter" width="30%">
+			
+<!---Song--->
+						<div id="audioSection">
+							<input class="playButton" type="button" value="&#9658 PLAY SONG" onclick="play()" width="10%">	
+							<audio loop id="audio" src="audio/alchemon_song.mp3"></audio>
+						</div>
+					</div>
+				</td>
+				
+<!---Stake trade evolve--->
+			<tr>
+				<td colspan=6 style="z-index:10; padding-top: 5%;">
+					<p class="darkBlueHeader" id="spreadText">STAKE! TRADE! EVOLVE!</p> 
+					<p class="orangeHeader" id="spreadText">CRAFT! COLLECT! EARN!</p>
+					<p class="darkGrayText_1" id="marginFix_2">Alchemon is the first monster-collecting NFT staking, crafting and trading card game only on the Algorand Blockchain! <br><br>Get your Alchemon, evolve them and then craft Epic and Legendary Alchemon that will never be for sale (in the official store)!</p>
+				</td>
+				<td colspan=4 class="whiteGrayBackground_3" style="vertical-align: middle;">
+					<img class="centerImage" id="zoomIn_1" src="images/34_sable.png" width="100%" alt="Sable">
+				</td>
+			</tr>
+
+<!---Alchemon = Algo+Alchemy+Monster--->
+			<tr class="blueBackground_1">
+				<td colspan=4 style="vertical-align: middle;">
+					<img class="centerImage" id="zoomIn_1" src="images/24_drathslayer.png" width="100%" alt="Drath Slayer">
+				</td>
+				<td colspan=6>
+					<p class="yellowHeader" id="spreadText">ALCHEMON = ALGO+ALCHEMY+MONSTER</p> 
+					<p class="whiteText" id="marginFix_2">Alchemon is the first monster-collecting NFT staking, crafting and trading card game only on the Algorand Blockchain!<br><br> Get your Alchemon, evolve them and then craft Epic and Legendary Alchemon that will never be for sale (in the official store)!</p>
+				</td>
+			</tr>
+
+<!---Evolution chart--->
+			<tr>
+				<td colspan=10>
+					<div class="marginFix_1">
+						<img class="evolutionPoster" id="zoomIn_2" src="images/evolution.png" width="90%" alt="Evolution Chart">
+					</div>
+				</td>
+			</tr>
+
+<!---Alchemon Inc Wallet--->	
+			<tr>
+				<td colspan=10 class="orangeBackground_2">
+					<p class="grayHeader" id="spreadText">ALCHEMON INC'S WALLET</p>
+					<p class="whiteHeader" style="text-align:center; margin:5%;color: #FFFFFF; display: inline-block; word-break: break-word;">INCMQGPN4PP3N7AHMTKDTDZZ5T642QXMIFK5Z2V2US4GPT7ACMYDBCPL3Y</p>
+					<p class="marginFix_1" style="margin-top:0%"><img id="zoomIn_2" class="wallet" src="images/wallet.jpg" alt="Creator's wallet" width="35%"></p>
+					</td>		
+			</tr>
+
+<!---Disclaimer--->			
+			<tr>
+				<td colspan=10>
+					<p class="orangeHeader" id="spreadText">DISCLAIMER</p>
+					<p class="darkGrayText_1"><ol id="marginFix_3"><li>See existing Store and Swap pages for current rates.</li><li>All the rules here are liable to change at any time for any reason. Announcements beforehand will be attempted in all circumstances.</li><li>Read the AlcheCoin Legal Opinion Letter.</li><li>Alchemon NFT Cards, AlcheCoin, Packs, Art, or any Alchemon product are all inherently worthless and were created for entertainment value only. Any and all value (real or imagined) assigned to them is created by the community. Prices for getting the NFT Cards is for entertainment in collecting or participation in the game. This is not an investment or security.</li></p>
+				</td>	
+			</tr>
+
+        <!-- Contact form -->
+        <div id="Contact">
+           <button onclick="openForm()" class="Pop_Up_Button">PRE-REGISTER!</button>
+           <div class="form-popup" id="myForm" ondblclick="closeForm()" style="background-color:#f9f9f9; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);">
+                <form action="https://formspree.io/f/xnqleggd" method="POST" class="form-container">
+                    <div style="background-color::#f9f9f9;">
+					<p class="darkBlueHeader" style="margin-top:-3%; margin-bottom:-3%">PRE-REGISTRATION FORM</p><p style="color:orange; text-align: center; font-weight: normal"><b><i> Beta version of Alchemon video game:</b></i></p>
+                    <label for="name" style="text-align:left">*First and Last Name:</label>
+                      <input type="text" placeholder="Enter your full name" name="name" required<br>
+                    <label for="phone">Phone:</b></label>
+                      <input type="text" placeholder="Type your phone number" name="phone"<br>
+                    <label for="email" >*Email:</label>		
+                      <input type="text" placeholder="We will email the game link to this address" name="email" required>
+					</div>
+                    <button id="submitButton1" type="submit" class="btn">SUBMIT</button>
+                    <button id="closeButton" type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+           </div>
+        </div>
+
+<!---FOOTER--->
+			<tr>
+				<td colspan=10 class="footer">
+					<p id="marginFix_3" >© 2021 Alchemon. All Rights Reserved.<br><br><a class="footerLink" href="https://t.me/joinchat/WbyxkfAyJDZmMzE5" target="_blank">Telegram</a> // <a class="footerLink" href="https://discord.gg/qKtk4XGXyS" target="_blank">Discord </a>// <a class="footerLink" href="https://twitter.com/AlchemonNFT" target="_blank">Twitter</a><br><br><a class="footerLink" href="privacypolicy.html" target="_blank" style="font-weight: normal">Privacy Policy</a><br><a class="footerLink" href="termsandconditions.html" target="_blank" style="font-weight: normal">Terms and Conditions</a><br><a class="footerLink" href="cookiespolicy.html" target="_blank" style="font-weight: normal">Cookies Policy</a>
+						<img class="footerImage1" src="images/backs/4_miya_back.png" width="15%" alt="Miya">
+						<img id="contact" class="footerImage2" src="images/19_slug.png" width="15%" alt="Slug">
+					</p>
+				</td>
+			</tr>		
+	
+	</body>
+</html>

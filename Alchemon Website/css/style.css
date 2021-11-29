@@ -1,0 +1,939 @@
+/*LOADING PAGE*/
+/*Egg icon during loader*/
+#loader_image {
+	animation: fadeIn ease 1s;
+	-webkit-animation: fadeIn ease 1s;
+	position: relative;
+	margin-left:40%;
+	margin-right:40%;
+	margin-top: 5%;
+	animation-name: motion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*Page loader spinner animation*/
+#loader_symbol {
+	width: 100px;
+	height: 100px;
+	border: 16px solid #FFA500;
+	border-radius: 50%;
+	border-top: 16px solid #136af8;
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+	opacity: 0.75;
+	position: relative;
+	display: block;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Loading text*/
+#loader_text {
+	animation: 1s shake infinite alternate;
+	font-family: poppins;
+	color: #007bff;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+}
+
+/*Loading egg fade in*/
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+/*Loading spinning wheel code*/
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/*Shaking text during page load*/
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*Egg shaking during page load*/
+@keyframes motion {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*Proper navbar scrolling*/
+html {
+  scroll-padding-top: 6%; /*Height of sticky header */
+  scroll-behavior: smooth;
+  overflow-wrap: break-word;
+}
+
+/*BODY*/
+body {
+	font-family: poppins;
+	margin: 0;
+	opacity: 1;
+	text-align: justify;
+}
+
+/*Responsive body text size*/
+	@media (min-width: 1px) {
+		body { font-size: 5vw; }}
+	@media (min-width: 300px) {
+		body { font-size: 4vw; }}
+	@media (min-width: 350px) {
+		body { font-size: 3.5vw; }}
+	@media (min-width: 500px) {
+		body { font-size: 3vw; }}
+	@media (min-width: 650px) {
+		body { font-size: 2.5vw; }}
+	@media (min-width: 800px) {
+		body { font-size: 2vw; }}
+	@media (min-width: 1100px) {
+		body { font-size: 1.5vw; }}
+	@media (min-width: 1800px) {
+		body { font-size: 1.25vw; }
+}
+
+/*NAVBAR*/
+.topnav {
+	overflow: hidden;
+	background: rgba(0, 0, 140, 0.5);
+	color:white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:19;
+}
+.topnav a {
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 1% 2% 1% 2%;
+	text-decoration: none;
+}
+.topnav a:hover {
+	background-color: orange;
+	color: #00006f;
+	transition: 0.4s;
+}
+
+/*Responsive navbar*/
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+/*Logo on navbar*/
+img.sticky {
+	position: -webkit-fixed; /*Safari*/
+	position: fixed;
+	top: 0;
+	z-index:20;
+	width:11%;
+	padding: .25% 2% 1% 2%;
+}
+
+/*BACKGROUND VIDEO*/
+#backgroundSky {
+	position: relative;
+	margin: 0;
+	z-index: 2;
+	margin-bottom: -11%;
+}
+
+/*Top of hompage character animations*/
+@keyframes grow_1 {
+  0%   {transform: scale(2.0);}
+  100% {transform: scale(1.0);}
+}
+@keyframes grow_2 {
+  0%   {transform: scale(.001);}
+  100% {transform: scale(1.0);}
+}
+
+/*Shockner*/
+.schockner {
+	z-index: 4;
+	position: absolute;
+	animation: grow_1 3s ease-in;
+	margin-top:-52%;
+	margin-left: 10%; 
+}
+
+/*Venetrix*/
+.venetrix {
+	z-index: 4;
+	position: absolute;
+	animation: grow_2 3s ease-in;
+	margin-top:-50%;
+	margin-left: 65%; 
+}
+/*Psychomenice*/
+.psychomenice {
+	z-index: 5;
+	position: absolute;
+	animation: grow_1 3s ease-in;
+	margin-top:-40%;
+	margin-left: 10%; 
+}
+/*Troctosaur*/
+.troctosaur {
+	z-index: 5;
+	position: absolute;
+	animation: grow_2 3s ease-in;
+	margin-top:-40%;
+	margin-left: 65%;
+}
+/*Troc*/
+.troc {
+	z-index: 7;
+	position: absolute;
+	animation: grow_1 3s ease-in;
+	margin-top:-26%;
+	margin-left: 10%; 
+}
+/*Igniter*/
+.igniter {
+	z-index: 6;
+	position: absolute;
+	animation: grow_2 3s ease-in;
+	margin-top:-28%;
+	margin-left: 65%;
+}
+/*LOGO*/
+.logo {
+	position: relative;
+	z-index: 3;
+	margin-top: -20%;
+	margin-right: 37.5%;
+	margin-left: 37.5%;
+	animation: fadeIn ease 5s;
+}
+/*SONG*/
+.playButton {
+	position: absolute;
+	margin-left: 42.7%;
+	margin-top: -14%;
+	width:15%;
+	font-family: poppins;
+	font-size: 2vw;
+	text-align: center;
+	background-color: orange;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 8px;
+	z-index: 5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+/*HEADERS*/
+.darkBlueHeader {
+	font-weight: bold;
+	color: #136af8;
+	text-align: center;
+}
+
+.orangeHeader {
+	font-weight: bold;
+	color: orange;
+	text-align: center;
+}
+
+.yellowHeader {
+	font-weight: bold;
+	color: yellow;
+	text-align: center;
+}
+.redHeader {
+	font-weight: bold;
+	color: red;
+	text-align: center;
+}
+
+.whiteHeader {
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.grayHeader {
+	font-weight: bold;
+	color: #838383;
+	text-align: center;
+}
+
+.linkHeader {
+	font-weight: bold;
+	text-align: center;
+	color: #136af8;
+	text-decoration: none;
+}
+
+/*TABLES*/
+
+table {
+	position: absolute;
+	margin: 0;
+	z-index: 9;
+	background-color: white;
+	border-collapse: collapse;
+}
+
+
+table td, table td * {
+    vertical-align: top;
+	margin-top: 5%;
+	margin-bottom: -.5%;
+	padding: 0;
+}
+
+/*Images inside table*/
+.centerImage {
+	display: block;
+	margin: auto;
+}
+
+.centerImage_1 {
+	display: block;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.centerImage_2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.centerImage_3 {
+	position: relative;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.centerImage_4 {
+	position: relative;
+	margin-right: 17.5%;
+	margin-left: 17.5%;
+}
+/*Text inside table*/
+.darkGrayText_1 {
+	font-weight: normal;
+	color: #404040;
+	margin-left: 4.5vw;
+	margin-right: 4.5vw;
+}
+
+.darkGrayText_2 {
+	font-weight: normal;
+	color: #272727;
+	margin-left: 4.5vw;
+	margin-right: 4.5vw;
+}
+
+.whiteText {
+	font-weight: normal;
+	color: white;
+	margin-left: 4.5vw;
+	margin-right: 4.5vw;
+}
+
+#whiteText_1 {
+	font-weight: normal;
+	color: white;
+	margin: 5%;
+}
+
+/*BACKGROUNDS*/ 
+.whiteGrayBackground_1 {
+	background-color: white;
+    background-image: linear-gradient(to left, #F2F2F2, #F8F8F8, #FFFFFF, #FFFFFF);
+}
+.whiteGrayBackground_2 {
+	background-color: white;
+    background-image: linear-gradient(to right, #F2F2F2, #F8F8F8, #FFFFFF, #FFFFFF);
+}
+.whiteGrayBackground_3 {
+	background-color: white;
+    background-image: linear-gradient(to left, #D8D8D8, #DEDEDE, #E5E5E5, #EBEBEB, #F2F2F2, #F8F8F8, #FFFFFF);
+}
+.whiteGrayBackground_4 {
+	background-color: white;
+    background-image: linear-gradient(to right, #fbfbfb, #ffffff);
+}
+.whiteGrayBackground_5 {
+	background-color: white;
+    background-image: linear-gradient(to right, #D8D8D8, #DEDEDE, #E5E5E5, #EBEBEB, #F2F2F2, #F8F8F8, #FFFFFF);
+}
+
+.blueBackground_1 {
+	background-color: #007bff;
+    background-image: linear-gradient(to left, #007bff, #2A78F8, #4287F9, #89B4FB, #E7F0FE);
+}
+
+.blueBackground_2 {
+	background-color: #007bff;
+    background-image: linear-gradient(to right, #007bff, #2A78F8, #4287F9, #89B4FB, #E7F0FE);
+}
+.blueBackground_3 {
+	background-color: #007bff;
+    background-image: linear-gradient(to left, #007bff, #2A78F8, #4287F9, #89B4FB);
+}
+.blueBackground_4 {
+	background-color: #007bff;
+    background-image: linear-gradient(to right, #007bff, #2A78F8, #4287F9, #89B4FB);
+}
+
+.blueBackground_5 {
+	background-color: #007bff;
+    background-image: linear-gradient(to right, #007bff, #00bbff, #8ad1ff);
+}
+
+.redBackground_1 {
+	background-color: #007bff;
+    background-image: linear-gradient(to left, #ff0000, #e50000);
+}
+
+.redBackground_2 {
+	background-color: #007bff;
+    background-image: linear-gradient(to right, #ff0000, #e50000);
+}
+
+.orangeBackground_1 {
+	background-color: orange;
+    background-image: linear-gradient(to left, #ffa500, #ffb327);
+}
+
+.orangeBackground_2 {
+	background-color: orange;
+    background-image: linear-gradient(to right, #ffa500, #ffb327);
+}
+
+.orangeBackground_3 {
+	background-color: orange;
+	border: 2px solid white;
+}
+
+.orangeBackground_4 {
+	background-color: orange;
+    background-image: linear-gradient(to right, #ffa500, #ffb327,#ffffff);
+}
+
+.orangeBackground_5 {
+	background-color: orange;
+    background-image: linear-gradient(to left, #ffa500, #ffb327,#ffffff);
+}
+
+
+
+
+.blackBackground {
+	background-color: black;
+}
+
+.whiteBackground {
+	background-color: white;
+}
+
+.whiteBackground1 {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+/*EVOLUTIONS POSTER*/
+.evolutionPoster {
+	display: block;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*Corrects margins for proper display*/ 
+.marginFix_1 {
+	margin-bottom:5%;
+}
+
+#marginFix_2 {
+	margin-bottom:5%;
+}
+#marginFix_3 {
+	margin: 5%;
+}
+#marginFix_4 {
+	margin: 10%;
+	color: white;
+}
+
+/*TEXT EFFECT*/
+#spreadText:hover {
+	letter-spacing: .5vw;
+	transition: letter-spacing 1s;
+}
+
+/*HOVER EFFECTS*/
+#zoomIn_1:hover {
+  transition: transform 1s;
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+#zoomIn_2:hover {
+  transition: transform 1s;
+  -ms-transform: scale(1.11);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(1.11);
+  transform: scale(1.11); 
+  transition-delay:1.5s;
+}
+
+/*Animations for hunting section*/
+#huntingAnimation_1 {
+	vertical-align: middle;
+	position: relative; 
+	margin-top: 4%;
+	margin-bottom: -3%;
+	animation-name: move7;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes move7 {
+	0%   {left:75%; top:0;opacity:0;}
+	10%  {left:55%; top:0;opacity:1;}
+	20%  {left:35%; top:0;}
+	30%  {left:15%; top:0;}	
+	40%  {left:-5%; top:0;}
+	50%  {left:-25%; top:0;opacity:1;}
+	100% {left:-50%; top:0;opacity:0;}
+}
+
+#huntingAnimation_2 {
+	position: relative;
+	margin-top: 4%;
+	margin-bottom:-5%;
+	animation-name: move8;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes move8 {
+	0%	 {left:-47%; top:0%; opacity:0;}
+	40%	 {left: -47%; top:0%;opacity:1;}	
+	50%	 {left: -47%; top:0%;opacity:1;}
+	60%	 {left:-27%; top:0%;opacity:1;}
+	70%	 {left:-7%; top:0%;opacity:1;}
+	80%	 {left:13%; top:0%; opacity:1;}
+	90%	 {left:33%; top:0%; opacity:1;}
+	100% {left:53%; top:0%;opacity:0;}
+}
+
+@keyframes fadeOut {
+	0% 
+	100% {}
+}
+@-webkit-keyframes fadeOut {
+	0% {opacity:1;}
+	100% {opacity:0;}
+}
+
+/*Buttons*/
+.linkButton {
+	margin-left: 20%;
+	margin-right: 20%;
+	width:60%;
+	font-family: poppins;
+	font-size: 2vw;
+	text-align: center;
+	background-color: orange;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.linkButton:hover {
+	background-color: red;
+	transition: 0.4s;
+}
+
+.linkButton:active {
+  transform: translateY(4px);
+}
+
+.submitButton {
+	width:20%;
+	font-family: poppins;
+	font-size: 2vw;
+	text-align: center;
+	background-color: orange;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.submitButton:hover {
+	background-color: red;
+	transition: 0.4s;
+}
+
+.submitButton:active {
+  transform: translateY(4px);
+}
+
+/*Breathe animation*/
+@keyframes breathe {
+  0%   {transform: scale(0.9);}
+  50% {transform: scale(1.0);}
+  100% {transform: scale(0.9);}
+}
+
+#breatheAnimation {
+	animation-name: breathe;
+	animation-duration: 1s;
+	animation-iteration-count:infinite;
+}
+/*News animation*/
+@keyframes move9 {
+	0%   {left:65%; top:0;opacity:0;}
+	10%  {left:55%; top:0;opacity:1;}
+	100% {left:-35%; top:0;}
+}
+
+#moveAnimation_1 {
+	vertical-align: middle;
+	position: relative;
+	animation-name: move9;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+}
+
+/*Wallet display*/
+.wallet {
+	margin-top: -1%;
+	margin-left: 35%;
+}	
+.wallet_1 {
+	margin-top: 0%;
+	margin-left: 25%;
+}	
+.wallet_2 {
+	margin-top: -2%;
+	margin-bottom: -1%;
+	margin-left: 35%;
+}	
+
+
+/*FOOTER*/
+.footer {
+	background-color: #00003f;
+	overflow: hidden;
+	color:white;
+	width: 100%;
+	z-index:10;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footerLink {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.footerImage1 {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	margin-bottom:5%;
+	margin-left:1%;
+}
+
+
+.footerImage2 {
+	position: absolute;
+	bottom: 0;
+	right:0;
+	margin-bottom:5%;
+	margin-right:1%;
+	}
+
+@keyframes fadeInOut {
+	0% {opacity:0;}
+	50% {opacity:1;} 
+	100% {opacity:0;}
+}
+
+.blueLinks {
+	text-decoration: none;
+	color: #136af8;
+}
+
+.craftImg {
+	position: relative;
+	margin-left: 10%;
+	padding-bottom:5%
+	
+}
+.tradeImg {
+	position: relative;
+	margin-left: 50%;
+	padding-bottom:5%
+}
+
+
+@keyframes spin_1 {
+	0% { transform: rotate(360deg); }
+	100% { transform: rotate(0deg); }
+}
+
+#trainingAnimation_1 {
+	position: relative; 
+	animation-name: spin;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+}
+
+#trainingAnimation_2 {
+	position: relative; 
+	animation-name: spin_1;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+}
+
+/*Video on instructions page*/
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  margin-right: 17.5%;
+  margin-left: 17.5%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  height: 65%;
+  border: none;
+}
+
+/*Lists*/
+
+ul {
+	margin-left: 5%;
+	margin-right: 5;
+}
+
+ol {
+	margin-left: 5%;
+	margin-right: 5;
+}
+
+/***** Contact Form Styling *****/
+/* Button used to open the contact form - fixed at the bottom of the page */
+.Pop_Up_Button {
+    position: fixed; /* The element is positioned relative to the viewport and stays in the same location no matter what */
+    bottom: 0; /* Positions the button slightly up from the bottom of the viewport */
+    right: 0; /* Positions the viewport slightly right from the side of the viewport */
+    width: 25vw; /* Sets the width relative to the viewport width */
+    background-color: orange; /* Sets the background color of the button to white */
+    color: #000080; /* Sets the color of the button text to black */
+    border: solid #000080; /* This makes a solid black border around the button */
+    cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
+    -webkit-animation: movePopup 5s; /* Animation for 5 seconds for Safari 4.0-8.0 */
+    animation: movePopup 5s; /* Animation set for 5 seconds */
+	z-index:11;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+/* Styling for the contact form */
+.form-popup {
+    border: 3px solid #f0f1f0; /* Creates a solid light gray border around the contact form */
+    z-index: 8; /* This z-index ensures the contact form shows above all other elements on the page */
+    display: none; /* Set the display to none, we will use JavaScript to show the contact form */
+    position: fixed; /* The form stays in the same location no matter what */
+    bottom: .5vw; /* Slightly up from the bottom of the viewport */
+    right: .5vw; /* Slightly in from the right side of the viewport */
+	z-index:11;
+	width:50%;
+	text-align: left;
+}
+
+/* Form styling */
+.form-container {
+    max-width: 60vw; /* Relative sizing of the form container - 49% of the viewport width */
+    padding: 1vw; /* Adds padding between the form-popup and the form-container */
+    background-color: #f9f9f9; 
+	z-index:11;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-popup {
+	  width:90%;
+	  font-size: 3vw;
+	  text-align: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Pop_Up_Button {
+	  width:50%;
+	  font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+	  font-size:3vw;
+  }
+}
+
+/* Input fields */
+.form-container input[type=text] {
+    width: 100%; /* The input boxes completely fill the width of the form-container */
+    padding: .93vw; /* Adds padding to the input boxes */
+    margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
+    border: none; /* Removes the border from the input boxes */
+    background: white; /* Sets the background color of the input boxes */
+    font-size: 1.5vw; /* Relative font sizing based on the width of the viewport */
+}
+
+/* General styling for all buttons */
+button {
+    letter-spacing: .3vw; /* Adds slight spacing between the letters */
+    font-size: 1.5vw; /* Relative sizing of text */
+    font-weight: bold; 
+    padding: 1.5vw; /* Adds padding to the text in the button */
+    cursor: pointer; /* Changes the cursor to pointer over button elements */
+    width: 100%; /* Sets the width of the buttons to 100% of their containers */
+    height: auto; /* Allows the height to be resized depending on the content showing */
+	font-family: poppins;
+}
+
+/* Hover effect for contact and submit buttons */
+button:hover, .form-container .btn:hover {
+    color: orange; /* This makes the text in the buttons white when hovered over */
+    background-color: #000080; /* The background of the button changes to black when hovered over */
+    transition-duration: 1s; /* This makes the transition last 1 second */
+    -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
+    border-color: orange; /* The border turns silver when the button is hovered over */
+}
+
+/* Styling for close button on hover */
+.form-container .cancel:hover {
+    color: white;
+    background-color: darkred;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    border-color: black;
+}
+
+input[type=text], select {
+  width: 94%;
+  display: inline-block;
+  height: auto;
+  font-size: 1.5vw;
+  border: 2px solid #ccc;
+  padding:2%;
+  font-weight: bold;
+  margin: 1%;
+}
+
+#submitButton1 {
+	background-color: orange;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border: 3px solid white;
+}
+
+#submitButton1:hover {
+	background-color: green;
+	transition: 0.4s;
+}
+
+#submitButton1:active {
+	transform: translateY(4px);
+}
+
+#closeButton {
+	background-color: red;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border: 3px solid white;
+}
+
+#closeButton:hover {
+	background-color: #8b0000;
+	transition: 0.4s;
+}
+
+#closeButton:active {
+	transform: translateY(4px);
+}
+
+/***** End of Contact Form Styling *****/
